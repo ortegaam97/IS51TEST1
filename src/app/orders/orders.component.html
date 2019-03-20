@@ -33,7 +33,7 @@
             <td><input [(ngModel)]="order.description" type="text" class="form-control" placeholder="Description"></td>
             <td><input [(ngModel)]="order.price" type="text" class="form-control" placeholder="Price"></td>
             <td><input [(ngModel)]="order.quantity" type="text" class="form-control" placeholder="Quantity"></td>
-            <td><button mat-raised-button color="primary" color="accent"><mat-icon>delete</mat-icon></button></td>
+            <td><button mat-raised-button color="primary" color="accent" (click)="delete()"><mat-icon>delete</mat-icon></button></td>
           </tr>
         </tbody>
       </table>
